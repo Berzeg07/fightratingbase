@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Базовый алгоритм для расчета рейтинга игроков</h1>
+
+        <article class="article">
+            <p class="article__title">Расчет производится по простой формуле:</p>
+            <p>W = 150, KO = 100, L= 50, LKO = 100</p>
+            <p>(W + KO) - (L + LKO) = PTS</p>
+        </article>
+
+        <h2 class="subtitle">Рейтинг игроков</h2>
+
+        <ul class="playerlist">
+            <li>
+                <span>Nickname</span>
+                <span>Win</span>
+                <span>KO</span>
+                <span>Looses</span>
+                <span>PTS</span>
+            </li>
+            <li>
+                <span>
+                    <input type="text" value="Hartigan" disabled>
+                </span>
+                <span>
+                    <input type="text" value="100" disabled>
+                </span>
+                <span>
+                    <input type="text" value="12" disabled>
+                </span>
+                <span>
+                    <input type="text" value="7" disabled>
+                </span>
+                <span>1000</span>
+                <div class="playerlist__action">
+                    <button class="btn">
+                        <img src="img/pen.svg">
+                    </button>
+                    <button class="btn">
+                        <img src="img/delete.svg">
+                    </button>
+                </div>
+            </li>
+            <li>
+                <span>
+                    <input type="text" value="Boxing Fanatico" disabled>
+                </span>
+                <span>
+                    <input type="text" value="100" disabled>
+                </span>
+                <span>
+                    <input type="text" value="12" disabled>
+                </span>
+                <span>
+                    <input type="text" value="7" disabled>
+                </span>
+                <span>1000</span>
+                <div class="playerlist__action">
+                    <button class="btn">
+                        <img src="img/pen.svg">
+                    </button>
+                    <button class="btn">
+                        <img src="img/delete.svg">
+                    </button>
+                </div>
+            </li>
+            <li>
+                <span>
+                    <input type="text" value="Aimbot" disabled>
+                </span>
+                <span>
+                    <input type="text" value="100" disabled>
+                </span>
+                <span>
+                    <input type="text" value="12" disabled>
+                </span>
+                <span>
+                    <input type="text" value="7" disabled>
+                </span>
+                <span>1000</span>
+                <div class="playerlist__action">
+                    <button class="btn">
+                        <img src="img/pen.svg">
+                    </button>
+                    <button class="btn">
+                        <img src="img/delete.svg">
+                    </button>
+                </div>
+            </li>
+        </ul>
+
+        <div class="addnewplayer">
+            <h2 class="subtitle">Добавить игрока</h2>
+
+            <ul class="addplayer">
+                <li>
+                    <div class="addplayer__title">
+                        <label for="nickinp">Nickname</label>
+                    </div>
+                    <input class="field" type="text" id="nickinp">
+                </li>
+                <li>
+                    <div class="addplayer__title">
+                        <label for="wininp">Win</label>
+                    </div>
+                    <input class="field" type="text" id="wininp">
+                </li>
+                <li>
+                    <div class="addplayer__title">
+                        <label for="koinp">KO</label>
+                    </div>
+                    <input class="field" type="text" id="koinp">
+                </li>
+                <li>
+                    <div class="addplayer__title">
+                        <label for="looseinp">Looses</label>
+                    </div>
+                    <input class="field" type="text" id="looseinp">
+                </li>
+            </ul>
+
+            <button class="btn">Добавить</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
